@@ -1,0 +1,36 @@
+# PCB Manufacturing Tracker
+
+A full-stack Manufacturing Execution System (MES) for tracking PCB boards through multiple manufacturing stages.
+
+## 🚀 Features
+
+- **Kanban Board** - Visual tracking of all boards
+- **Process Steps** - Soldering → Optical Inspection → X-Ray → Testing → Repair
+- **User Roles** - Admin, Manager, Supervisor, Operator
+- **Image Upload** - Attach photos to each manufacturing step
+- **Dashboard** - Real-time statistics and charts
+- **Notifications** - Get notified when boards are assigned
+- **CSV Export** - Export all data to Excel-compatible format
+
+## 🛠️ Tech Stack
+
+- **Backend:** Python, FastAPI, SQLAlchemy, SQLite
+- **Frontend:** React, Material UI, Vite
+
+## 🔐 Default Users
+
+| Username | Password | Role |
+|----------|----------|------|
+| admin | admin123 | Administrator |
+| manager1 | manager123 | Manager |
+| operator1 | operator123 | Operator |
+
+## 📦 Quick Start
+
+### Backend
+```bash
+cd backend
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+uvicorn app.main:app --reload --host 127.0.0.1 --port 8000
